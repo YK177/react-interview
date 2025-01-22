@@ -33,6 +33,7 @@ const App: React.FC = () => {
     } catch (err: any) {
       if (err?.message !== 'canceled') {
         setError('Failed to fetch data.');
+        setLoading(false);
       }
     }
   };
